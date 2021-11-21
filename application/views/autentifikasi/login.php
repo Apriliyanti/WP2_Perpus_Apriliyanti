@@ -15,15 +15,10 @@
                                       <h1 class="h4 text-gray-900 mb4">Halaman Login!!</h1>
                                  </div>
                                 <?= $this->session->flashdata('pesan'); ?>
-                                <form class="user" method="post"
-action="<?= base_url('autentifikasi'); ?>">
+                                <form class="user" method="post" action="<?= base_url('autentifikasi'); ?>">
                                     <div class="form-group">
-                                    <input type="text"
-class="form-control form-control-user" value="<?=
-set_value('email'); ?>" id="email" placeholder="Masukkan Alamat 
-Email" name="email">
-                                    <?= form_error('email',
-'<small class="text-danger pl-3">', '</small>'); ?>
+                                    <input type="text" class="form-control form-control-user" value="<?=set_value('email'); ?>" id="email" placeholder="Masukkan Alamat Email" name="email">
+                                    <?= form_error('email', '<small class="text-danger pl-3">', '</small>'); ?>
                                     </div>
                                     <div class="form-group">
                                     <input type="password"
