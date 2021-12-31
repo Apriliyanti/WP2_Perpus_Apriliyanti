@@ -158,7 +158,7 @@ akun member anda sudah dibuat. Silahkan Aktivasi Akun anda</div>');
     }
   }
 
-  public function logout()
+ public function logout()
   {
     $this->session->unset_userdata('email');
     $this->session->unset_userdata('role_id');
